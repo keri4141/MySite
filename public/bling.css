@@ -1,15 +1,35 @@
 html,body {
 
 font-family: 'Secular One', sans-serif;
+height:100%;
+
 
 }
 
-
-.container-fluid
+.navbar-default 
 {
-	padding-top:50px;
 	
+	border-color:#fd0436;
 }
+
+.navbar-toggle 
+{
+	
+	border-color:white;
+}
+.main
+{
+	
+	background-color:#fd0436;
+	height:100%;
+}
+
+.bg-1
+{
+	background-color:#fd0436;
+}
+
+
 
 .bigfont
 {

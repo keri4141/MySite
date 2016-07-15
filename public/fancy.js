@@ -1,8 +1,16 @@
 $(document).ready(function(){
+	//$('#navbars').hide().fadeIn(1700).delay(800);
+//	$('#name').hide().fadeIn(1700).delay(800);
 	
-	$('#name').hide().fadeIn(1700);
 	
-	
+	function adjust_body_offset() {
+    $('.jumbotron').css('padding-top', $('.navbar-default').outerHeight(true) + 'px' );
+}
+
+$(window).resize(adjust_body_offset);
+
+$(document).ready(adjust_body_offset);
+
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
