@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	//$('#navbars').hide().fadeIn(1700).delay(800);
-//	$('#name').hide().fadeIn(1700).delay(800);
+	$('#navbar').hide().fadeIn(1700).delay(800); //the nav bar
+	$('#name').hide().fadeIn(1700).delay(800);
 	
 	
 	function adjust_body_offset() {
