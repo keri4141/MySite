@@ -5,7 +5,10 @@ height:100%;
 
 
 }
-
+.navbar-default .navbar-toggle .icon-bar
+{
+	background-color:#fd0436;
+}
 .navbar-default 
 {
 	
@@ -14,7 +17,7 @@ height:100%;
 
 .navbar-toggle 
 {
-	
+	background-color:white;
 	border-color:white;
 }
 .main
