@@ -7,18 +7,30 @@ height:100%;
 }
 .navbar-default .navbar-toggle .icon-bar
 {
-	background-color:#fd0436;
+	background-color:#5eba7d;
 }
 
 #HOME
 {
 	padding-bottom:0px;
 }
+.navbar{
+	-webkit-box-shadow: 1px 4px 9px 0px rgba(82,80,82,1);
+-moz-box-shadow: 1px 4px 9px 0px rgba(82,80,82,1);
+box-shadow: 1px 4px 9px 0px rgba(82,80,82,1);
+border-bottom-width:0px;
+}
+
+.navbar .navbar-default .navbar-fixed-top
+{
+	border-bottom-width: 0px;
+	
+}
 
 .navbar-default 
 {
 	
-	border-color:#fd0436;
+	border-color:#5eba7d;
 }
 
 .navbar-toggle 
@@ -29,13 +41,13 @@ height:100%;
 .main
 {
 	
-	background-color:#fd0436;
+	background-color:#5eba7d;
 	height:100%;
 }
 
 .bg-1
 {
-	background-color:#fd0436;
+	background-color:#5eba7d;
 }
 
 #SMALL_LINKS {
