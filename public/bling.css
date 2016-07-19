@@ -9,11 +9,27 @@ height:100%;
 {
 	background-color:#5eba7d;
 }
-
-#HOME
+section
 {
-	padding-bottom:0px;
+	
+	min-height:100%;
+
 }
+
+
+.bg-2
+{
+	background-color:#956DDB;
+}
+
+.nobottomPadMargin
+{
+	
+	padding-bottom:0px;
+	margin-bottom: 0px;
+}
+
+
 .navbar{
 	-webkit-box-shadow: 1px 4px 9px 0px rgba(82,80,82,1);
 -moz-box-shadow: 1px 4px 9px 0px rgba(82,80,82,1);
@@ -37,12 +53,6 @@ border-bottom-width:0px;
 {
 	background-color:white;
 	border-color:white;
-}
-.main
-{
-	
-	background-color:#5eba7d;
-	height:100%;
 }
 
 .bg-1
