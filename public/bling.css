@@ -19,7 +19,7 @@ section
 
 .bg-2
 {
-	background-color:#956DDB;
+	background-color:#FBFBFB;
 }
 
 .nobottomPadMargin
@@ -111,3 +111,41 @@ border-bottom-width:0px;
   padding-left: 1cm;
   padding-right: 1cm;
 }
+
+
+
+#oscillate{
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  -webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+  
+}
+
+@-webkit-keyframes bounce {
+	0% {
+		-webkit-transform:  translate(0, 0);
+	}
+	20% {
+		-webkit-transform: translate(0px, 10px);
+	}
+	40% {
+		-webkit-transform:  translate(0, 0);
+	}
+}
+@keyframes bounce {
+	0% {
+		transform:  translate(0, 0);
+	}
+	20% {
+		transform: translate(0px, 10px);
+	}
+	40% {
+		transform: translate(0, 10px);
+	}
+}
+
+
+

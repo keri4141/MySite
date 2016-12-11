@@ -1,95 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  >
 <head>
   <title>Alvin Chau</title>
   <link rel="shortcut icon" href="favicon.ico" />
   <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
   
-	<script src="fancy.js"></script>
-
-
-
+ 
+ <script src="angularscript.js"></script>
+  <script src="fancy.js"></script>
   <link rel="stylesheet" type="text/css" href="bling.css">
+   
 </head>
 <body>
 
 
-<nav class="navbar navbar-default navbar-fixed-top" style="background-color:#557182">
-    
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span>
- <span class="icon-bar"></span>
- <span class="icon-bar"></span>
- <span class="icon-bar"></span>
+	<nav class="navbar navbar-default navbar-fixed-top" style="background-color:#557182">
+		
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar"> 
+				
+				 <span class="icon-bar"></span>
+				 <span class="icon-bar"></span>
+				 <span class="icon-bar"></span>
 
-            </button> 
+				</button> 
 
-        </div>
-        <div class="navbar-collapse collapsed">
-            <ul id="navbar"  class="nav navbar-nav">
+			</div>
 			
-               <li><div class="TEST"><h2><a href="#HOME" style = "color:white"> Home </a></h2></div></li>
-			   <li><div class="TEST"><h2><a href="#section2" style = "color:white"> About Me </a></h2></div></li>
-                
-            </ul>
-           
-        </div>
-       
-    
-</nav>
+			<div class="navbar-collapse collapse">
+				<ul id="navbar"  class="nav navbar-nav">
+				
+				   <li><div class="TEST"><h2><a href="#HOME" style = "color:white"> Home </a></h2></div></li>
+				   <li><div class="TEST"><h2><a href="#section2" style = "color:white"> Projects </a></h2></div></li>
+					
+				</ul>
+			   
+			</div>
+			
+		   
+		
+	</nav>
 
+	<!--MAIN PAGE -->
 
 	<section class="bg-1">
 	  
-
 		<div  class="container-fluid text-center" id="HOME">
-			 <div class="jumbotron bg-1 nobottomPadMargin" id="name" >
+			 <div class="jumbotron bg-1 nobottomPadMargin" id="name" style="margin-top: 50px;">
 				<h3 style = "color:white" class="bigfont"> <strong>Alvin Chau</strong></h3>
 				<br>
 				<img src="AlvinLogo2.png" alt="" height="150" width ="150">
 				<div class="TEST">
+				
 					<p>
 						<img src="GitHub-Mark-Light-32px.png" alt=""> <a id="SMALL_LINKS" href="https://github.com/keri4141" target="_blank" style = "color:white">Github </a>
 						<img src="soundcloud.png" alt=""> <a id="SMALL_LINKS" href="https://soundcloud.com/alvinchau" target="_blank" style = "color:white">Sounds </a>
 					</p>
-					
-						
 							
 				</div>
 			
 			</div>
-					<p>
-						ffffffffffffffffffffffffffffffffffffffffffffffffffffff
-						ffffffffffffffffffffffffffffffffffffffffffffffffffffff
-						ffffffffffffffffffffffffffffffffffffffffffffffffffffff
-						ffffffffffffffffffffffffffffffffffffffffffffffffffffff
-						ffffffffffffffffffffffffffffffffffffffffffffffffffffff
-						ffffffffffffffffffffffffffffffffffffffffffffffffffffff
-						</p>
-		
+				
+			<p style = "color:white">
+			 Hi, my name is Alvin. I am a junior at Rutgers University studying Computer Science, Mathematics, and Physics. <br>
+			 My interests are in computer graphics, web development, and software engineering.			
+			</p>
+						
+						
+			<div id="oscillate">
+				<a href="#section2"><img src="down-arrow.svg" alt=""></a>
+			</div>
+			
+			
 		</div>
+		
 		
 	</section>
+<!--END OF MAIN PAGE-->
 
+<!--PROJECT PAGE -->
 
+	<section class="bg-2" id="section2" ng-app="myApp" >
+		
+		<ng-view></ng-view>
 
+	</section>
 
-
-<section class="bg-2">
-	<div class="jumbotron nobottomPadMargin bg-2" id="section2">
-		<div id="name" class="container-fluid">
-			
-			
-		</div>
-
-	</div>
-</section>
+<!--END OF PROJECT PAGE-->
 </body>
 </html>
