@@ -10,12 +10,4 @@ var app= angular.module("myApp", ['ngRoute'])
 							        templateUrl : "templates/projectlayout.html"
 									
 							    });
-					});//k
-/*					
-app.controller('homeTransitionController',function(){
-	
-	
-	
-	
-	
-});f*/
+					});//f
