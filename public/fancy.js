@@ -29,8 +29,12 @@ $(document).ready(adjust_body_offset);*/
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    } // End iflff
+    } // End if
   });
+
+$("#project1").hover(function(){
+  alert($(this).width());
+});
   
   
   
