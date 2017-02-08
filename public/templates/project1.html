@@ -1,12 +1,31 @@
 <div  class="container-fluid text-center">
-			 <div class="jumbotron bg-2 nobottomPadMargin" id="name" style="
-    margin-top: 50px;" >
-		<h2>CalendarShare: A story about a project done during finals, the grind</h2>
+			 <div class="jumbotron bg-2 nobottomPadMargin" id="name" style="margin-top: 50px;" >
+    	<div class="container animated fadeInUp">
+
+		<h1>CalendarShare: A story about a project done during finals, the grind (December 2016)</h1>
+			<h2> Brief Summary: </h2>
+			<br>
+			<p style="text-align: justify;">
+			This is a web application that utilizes Java as a back-end, ReactJS as the front-end, and uses the FullCalendar Jquery plugin and was hosted using AWS Elastic Bean Stalk. CalendarShare allows users to register and login into their own calendar where they can edit/update entries in the calendar by clicking on a box entry. Users can also drag/drop an entry into a trash can to delete an event, they can share their calendars with other users for them to view.
+			</p>
+			<h2> Challenges That Ocurred: </h2>
+			<br>
+			<p style="text-align: justify;">
+			This was to be done in 3 days, I did not have any experience working on Java as a back end or ReactJS as the front end. My first approach was to simply use the Google Calendar API to handle the sharing aspect of the project because I had imagined that it would be rather difficult to implement from scratch, however I realized what would be the point of having users register/login and saving the information in a database when they were going to use Google as their login?
+			<br>
+
+			</p>
+			<h2> Solution: </h2>
+			<br>
+			<p style="text-align: justify;">
+			I decided to scrap the Google Calendar API idea and discovered a jquery library called FullCalendar that I could use to create a basic layout for a calendar which saved me time from creating one from scratch. The approach I took was to create three tables in the database, one that kept track of user information, another that kept track of their calendar information, and lastly a table that kept track of who shared their calendars with whom. To create a link between these tables, I had a column called userID that would increment everytime a user was created, using that userID I was able to track down who shared with who and which calendar information belonged to which user. After that, I used ajax to call the java servlets that would handle most of the SQL queries such as when an event was created on the calendar, or when it would update the database when an event was deleted. I managed to finish within the required time but also learned alot about using Java for web development and made me realize how much it offers.
+			<br>
 			
-			</div>
+			</p>
+		</div>
 				
 				
 		
-		
+		</div>
 		</div>
 		

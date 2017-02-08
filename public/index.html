@@ -20,7 +20,10 @@
     <link rel="stylesheet" type="text/css" href="animate.css">
 
   <link rel="stylesheet" type="text/css" href="bling.css">
-   
+   <style>
+
+
+   </style>
 </head>
 <body>
 
@@ -43,6 +46,8 @@
 				
 				   <li><div class="TEST"><h2><a href="#HOME" style = "color:white"> Home </a></h2></div></li>
 				   <li><div class="TEST"><h2><a href="#section2" style = "color:white"> Projects </a></h2></div></li>
+				  <li><div class="TEST" data-toggle="modal" data-target="#myModal"><h2> <a><span class="glyphicon glyphicon-envelope" style="color:white" ></span> Contact</a></h2></div></li>
+
 					
 				</ul>
 			   
@@ -57,7 +62,7 @@
 	<section class="bg-1">
 	  
 		<div  class="container-fluid text-center " id="HOME">
-			<div class="animated fadeInUp">
+			<div class="animated slideInUp">
 				 <div class="jumbotron bg-1 nobottomPadMargin" id="name" style="margin-top: 50px;">
 
 					<h3 style = "color:white" class="bigfont"> <strong>Alvin Chau</strong></h3>
@@ -70,6 +75,7 @@
 						<p>
 							<img src="GitHub-Mark-Light-32px.png" alt=""> <a id="SMALL_LINKS" href="https://github.com/keri4141" target="_blank" style = "color:white">Github </a>
 							<img src="soundcloud.png" alt=""> <a id="SMALL_LINKS" href="https://soundcloud.com/alvinchau" target="_blank" style = "color:white">Sounds </a>
+							
 						</p>
 								
 					</div>
@@ -77,20 +83,54 @@
 				</div>
 					
 				<p style = "color:white">
-				 Hi, my name is Alvin. I am a junior at Rutgers University studying Computer Science, Mathematics, and Physics. <br>
-				 My interests are in computer graphics, web development, and software engineering.			
+				 Hi, my name is Alvin. I am a student at Rutgers University studying Computer Science, Mathematics, and Physics. <br>
+				 My interests are in computer graphics, web development, and software engineering.
+
+
+  
+
 				</p>
 							
 							
 				<div id="oscillate">
 					<a href="#section2"><img src="down-arrow.svg" alt=""></a>
 				</div>
+
+
 				
 			</div>
+
 		</div>
 		
-		
+		 <div class="modal fade" id="myModal" role="dialog">
+    <div  class="modal-dialog modal-lg">
+    
+      <!-- EMAIL DIALOG content-->
+      <div style="background-color:#557182" class="modal-content">
+        <div style="border-bottom:#557182" class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 style="color:white" class="modal-title">Sending an email to Alvinchau2013@gmail.com</h4>
+        </div>
+        <div  class="modal-body">
+
+	          <form  style="background-color:#557182" method="POST" action="http://formspree.io/alvinchau2013@gmail.com">
+	          <div class="form-group">
+				  <input type="email"  class="form-control" name="email" placeholder="Your email">
+				  <br>
+				  <textarea name="message"  class="form-control" placeholder="Your message"></textarea>
+				  </div>
+				  <button class="btn btn-default" type="submit">Send</button>
+				</form>
+	        
+        <div class="modal-footer" style="border-top:#557182">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 	</section>
+
 <!--END OF MAIN PAGE-->
 
 <!--PROJECT PAGE -->
